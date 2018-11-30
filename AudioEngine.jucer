@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT name="AudioEngine" projectType="consoleapp" jucerVersion="5.3.1">
+  <MAINGROUP id="E4I2Qq" name="AudioEngine">
+    <GROUP id="{87E1A12D-C436-75A0-E2F4-DD4C3435140B}" name="Source">
+      <FILE id="llibqU" name="AudioBuffer.cpp" compile="1" resource="0" file="Source/AudioBuffer.cpp"/>
+      <FILE id="eC1sl7" name="AudioBuffer.h" compile="0" resource="0" file="Source/AudioBuffer.h"/>
+      <FILE id="XtcjSy" name="AudioEngine.cpp" compile="1" resource="0" file="Source/AudioEngine.cpp"/>
+      <FILE id="PFdFGA" name="AudioEngine.h" compile="0" resource="0" file="Source/AudioEngine.h"/>
+      <FILE id="YzYSus" name="AudioMessage.h" compile="0" resource="0" file="Source/AudioMessage.h"/>
+      <FILE id="SQuiIn" name="Channel.cpp" compile="1" resource="0" file="Source/Channel.cpp"/>
+      <FILE id="V0ylQG" name="Channel.h" compile="0" resource="0" file="Source/Channel.h"/>
+      <FILE id="vdxsZn" name="CommandLine.cpp" compile="1" resource="0" file="Source/CommandLine.cpp"/>
+      <FILE id="H9uizg" name="CommandLine.h" compile="0" resource="0" file="Source/CommandLine.h"/>
+      <FILE id="Lr9bTq" name="MainLoop.cpp" compile="1" resource="0" file="Source/MainLoop.cpp"/>
+      <FILE id="oUF6AT" name="Sample.cpp" compile="1" resource="0" file="Source/Sample.cpp"/>
+      <FILE id="mUO1jZ" name="Sample.h" compile="0" resource="0" file="Source/Sample.h"/>
+      <FILE id="iE6lOe" name="ScriptingLanguage.cpp" compile="1" resource="0"
+            file="Source/ScriptingLanguage.cpp"/>
+      <FILE id="pPLJEF" name="ScriptingLanguage.h" compile="0" resource="0"
+            file="Source/ScriptingLanguage.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
