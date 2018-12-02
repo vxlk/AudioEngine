@@ -6,13 +6,15 @@ enum class CommandLineMessage
 {
 	isOkay,
 	isQuit,
-	improperFormat
+	improperFormat,
+	LoadError
 };
 
 class CommandLine
 {
 
 public:
+	CommandLine();
 	CommandLineMessage processInput(const std::string& command);
 
 private:

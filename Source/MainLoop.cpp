@@ -16,6 +16,8 @@ int main()
 			status = UI.processInput(input);
 			if (status == CommandLineMessage::isQuit) 
 				canRun = false;
+			if (status == CommandLineMessage::LoadError)
+				std::cout << "\n Load Error from File";
 		}
 		
 		else return 0; //this would be gui implementation if i were to implement it

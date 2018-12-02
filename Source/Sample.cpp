@@ -9,6 +9,7 @@
 */
 
 #include "Sample.h"
+#include <windows.h>
 
 AudioEngine::Sample::Sample() : hasSound(false)
 {
@@ -75,13 +76,25 @@ AudioEngine::Sample::Sample(const URL& url)
 
 	thread.startThread(3);
 
+	/*
 	//idk if you need this yet
 	RuntimePermissions::request(RuntimePermissions::recordAudio,
 		[this](bool granted)
 	{
 		int numInputChannels = granted ? 2 : 0;
 		audioDeviceManager.initialise(numInputChannels, 2, nullptr, true, {}, nullptr);
+		
 	});
+	*/
+
+#ifdef _WIN32
+#include <windows.h>
+	//init the current thread before calling init on device manager
+	CoInitialize(0);
+#endif
+
+	int numInputChannels = 2;
+	audioDeviceManager.initialiseWithDefaultDevices(2, 2);
 
 	audioDeviceManager.addAudioCallback(&audioSourcePlayer);
 	audioSourcePlayer.setSource(&transportSource);

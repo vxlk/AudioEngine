@@ -1,5 +1,10 @@
 #include "CommandLine.h"
 
+CommandLine::CommandLine()
+{
+	impl.init();
+}
+
 CommandLineMessage CommandLine::processInput(const std::string& input)
 {
 	if (input == "quit") return CommandLineMessage::isQuit;
@@ -31,8 +36,9 @@ CommandLineMessage CommandLine::load(const std::string& input)
 	}
 
 	///temp file extension add
-	impl.loadSoundFromFile(fileName + ".mp3", std::stoi(index));
-	return CommandLineMessage::isOkay;
+	if (impl.loadSoundFromFile(fileName + ".mp3", std::stoi(index)) == AudioMessage::Success)
+		return CommandLineMessage::isOkay;
+	else return CommandLineMessage::LoadError;
 }
 
 CommandLineMessage CommandLine::play(const std::string& input)
